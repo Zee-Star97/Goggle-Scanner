@@ -1,6 +1,6 @@
 import os
 import re
-import subprocess # nosec B404: Security implications of using subprocess have been reviewed.
+import subprocess
 import argparse
 import sys
 
@@ -123,7 +123,7 @@ def compile_source(source_file):
             [compiler, source_file, "-o", output_exe], 
             capture_output=True, 
             text=True,
-            shell=False # nosec B603: shell=False successfully prevents malicious code being executed.
+            shell=False
         )
         
         # Output an error if compilation failed
@@ -165,7 +165,7 @@ def run_fuzzer(executable_path):
         payload = b"A" * size
 
         try:
-            process = subprocess.Popen( # nosec B603: executable path is automatically assigned and is unlikely to be manipulated.
+            process = subprocess.Popen(
                 [executable_path],
                 stdin=subprocess.PIPE,
                 stdout=subprocess.DEVNULL,
