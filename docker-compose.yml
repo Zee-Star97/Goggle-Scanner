@@ -1,0 +1,15 @@
+services:
+
+  jenkins:
+    build: .
+    image: plcs-jenkins-python:lts
+    container_name: plcs-jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:
