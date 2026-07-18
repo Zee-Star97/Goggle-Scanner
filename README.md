@@ -1,6 +1,6 @@
 ## Prerequisites
 
-After installing this code from Gitlab, the docker environment needs to be set up. Ensure that docker is installed on your system. Then, in the project directory, run 'docker compose build'. This should install the necessary dependencies needed on the system level and create the environment. 
+After downloading the code, the docker environment needs to be set up. Ensure that docker is installed on your system. Then, in the project directory, run 'docker compose build'. This should install the necessary dependencies needed on the system level and create the environment. 
 
 ## Running the application
 
