@@ -1,4 +1,4 @@
-# PLCS CW2 CWE-119 Vulnerable Code Example
+# CWE-119 Vulnerable Code Example
 
 ## Overview
 This directory contains **intentionally vulnerable code** that demonstrates **CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer**.  
